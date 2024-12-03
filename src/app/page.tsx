@@ -30,10 +30,15 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gray-100 py-10">
-      <div className="w-full max-w-md bg-white shadow-md rounded-lg p-6">
-        <h1 className="text-2xl font-bold mb-4 text-center text-black">Chat EA</h1>
-        <div className="mb-4 w-full overflow-y-auto border border-gray-300 rounded-md p-3">
+    <div className="min-h-screen flex justify-center items-center bg-gray-100 py-10 px-4 lg:px-20">
+      <div className="w-full max-w-7xl bg-white shadow-md rounded-lg p-6">
+        <h1 className="text-2xl font-bold mb-4 text-center text-black">
+          Prompt Pilot
+        </h1>
+        <h3 className="font-bold text-black text-center mb-2">
+          Your GenAI Assistant
+        </h3>
+        <div className="mb-4 w-full overflow-y-auto border border-gray-300 rounded-md p-3 h-[600px]">
           {messages.length === 0 ? (
             <p className="text-gray-500 text-center">No messages yet</p>
           ) : (
@@ -75,4 +80,5 @@ export default function Home() {
       </div>
     </div>
   );
+  
 }
